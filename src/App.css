@@ -1,0 +1,24 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace
+}
+
+.App {
+    /* background-color: blue; */
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(121, 159, 177);
+    border: 1.2px solid skyblue;
+    border-radius: 7px;
+
+    padding: 15px;
+
+    display: block;
+    width: 50%;
+    margin: 100px auto 0;
+
+    text-align: center;
+}
+
+
+
+  
