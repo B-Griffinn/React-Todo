@@ -5,6 +5,10 @@ Once a todo is submitted, the Todo List should re-render and show the added todo
 */
     
 import React from 'react';
+
+import '../../../src/App.css';
+
+
 const TodoForm = props => {
   return (
     <form>
@@ -13,10 +17,13 @@ const TodoForm = props => {
         type="text"
         name="todo"
         value={props.value}
-        placeholder="...todo"
+        placeholder="Add Todo"
       />
-      <button onClick={props.handleAddTodo}>Add Todo</button>
-      <button onClick={props.handleClearTodos}>Clear Completed</button>
+      <div className="btn-wrapper">
+        <button onClick={props.handleAddTodo}>Add Todo</button>
+        <button onClick={props.handleClearTodos}>Clear Completed</button>
+      </div>
+      
     </form>
   );
 };

@@ -2,6 +2,8 @@ import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
 
+import './App.css';
+
 class App extends React.Component {
   constructor() {
     super();
@@ -56,17 +58,21 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <TodoList
-          handleToggleComplete={this.toggleTodoComplete}
-          todos={this.state.todos}
-        />
-        <TodoForm
-          value={this.state.todo}
-          handleTodoChange={this.changeTodo}
-          handleAddTodo={this.addTodo}
-          handleClearTodos={this.clearCompletedTodos}
-        />
+      <div className="app-wrapper">
+        
+        <div className="App">
+          <h1>Ben's TodoList</h1>
+          <TodoList
+            handleToggleComplete={this.toggleTodoComplete}
+            todos={this.state.todos}
+          />
+          <TodoForm
+            value={this.state.todo}
+            handleTodoChange={this.changeTodo}
+            handleAddTodo={this.addTodo}
+            handleClearTodos={this.clearCompletedTodos}
+          />
+        </div>
       </div>
     );
   }

@@ -1,0 +1,72 @@
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 15px 10px 5px 10px;
+  }
+
+
+.todo {
+    background-color: rgb(216, 200, 171);
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+
+    border: 1px dashed lightgray;
+    border-radius: 7px;
+    max-width: 70%;
+
+    margin: 5px 0 0 17%;
+}
+.todo:hover {
+    opacity: 0.5;
+}
+
+
+/* TodoForm Styles */
+form {
+    /* display: flex;
+    margin: 15px 10px 5px 10px; */
+    justify-content: center;
+}
+input, button {
+    outline: none;
+  }
+
+  input {
+      border-radius: 7px;
+      height: 25px;
+      align-self: center;
+      margin: 15px 0 15px 0;
+
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.32rem;
+
+      background-color: rgb(216, 200, 171);
+
+      border: 1.5px solid skyblue;
+
+  }
+
+  button {
+   align-self: center;
+
+   font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(216, 200, 171);
+    color: #888;
+    font-size: 15px;
+    width: 60px;
+    margin: 10px 10px 0 5px;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+
+    width: 7rem;
+    height: 2.8rem;
+
+    border-radius: 7px;
+  }
+  button:hover {
+    color: #333;
+  }
